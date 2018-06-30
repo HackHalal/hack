@@ -1,0 +1,64 @@
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f4f4f4;
+  line-height: 1.5;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* header */
+.header {
+  background-color: #333;
+  padding-top: 30px;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+}
+
+header .container {
+  display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    background: blue;
+    flex-basis: auto;
+    justify-content: flex-end;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+/* li a:hover {
+    background-color: #111;
+} */
+
+/* showcase */
+
+.main-section {
+  /* background-image: url('./main-image.jpg');
+  background-size: cover; */
+  width: 100vw;
+  height: 100vh;
+}
