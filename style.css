@@ -10,55 +10,131 @@ body {
   font-family: 'ABeeZee', sans-serif;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-}
-
 /* header */
-.header {
-  background-color: #333;
-  padding-top: 30px;
-  min-height: 70px;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid green;
+header {
+  background-color: #1dd1a1;
+  height: 15%;
+  margin: auto;
+  color: #fff;
 }
 
-header .container {
+header nav {
   display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  flex: f;
+}
+
+#logo {
+  flex: 1;
+  margin: 24px;
+}
+
+#nav-menu {
+  flex: 1;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    background: blue;
-    flex-basis: auto;
-    justify-content: flex-end;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  margin: 16px 25px;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
-
-/* Change the link color to #111 (black) on hover */
-/* li a:hover {
-    background-color: #111;
-} */
 
 /* showcase */
 
-.main-section {
-  /* background-image: url('./main-image.jpg');
-  background-size: cover; */
+#showcase {
+  background: url('https://images.pexels.com/photos/205334/pexels-photo-205334.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.show-text,
+a {
+  color: #fff;
+}
+
+/* about */
+
+#about {
+  background: url('https://images.pexels.com/photos/1040895/pexels-photo-1040895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  color: #fff;
+  display: flex;
+}
+
+#about h2 {
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.halo {
+  background: rgb(200, 214, 229, 0.8);
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px solid green;
+  width: 180px;
+  height: 180px;
+  margin: 20px 0 20px 30px;
+  text-align: center;
+}
+
+#sponsor {
+  height: 500px;
+  background: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.circle img {
+  border-radius: 50%;
+}
+
+#events {
+  height: 400px;
+  background: url('https://images.pexels.com/photos/129441/pexels-photo-129441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+footer {
+  height: 40px;
 }
