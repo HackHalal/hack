@@ -23,9 +23,10 @@ a {
 
 /* header */
 
-header {
+header .bg {
   /* background-color: rgba(37, 37, 37, 0.8); */
   display: flex;
+  z-index: 3;
   padding: 2em;
   width: 100%;
   position: fixed;
@@ -62,38 +63,26 @@ nav {
 /* showcase */
 
 #showcase {
-  background: url('https://images.pexels.com/photos/990818/pexels-photo-990818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background: url('https://images.pexels.com/photos/1039302/pexels-photo-1039302.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 95vh;
+  height: 90vh;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   color: #fff;
   background-attachment: fixed;
 }
 
 .showcase-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 14%;
 }
 
 .showcase-text h1,
 p {
+  text-align: left;
   font-size: 1.5em;
   padding: 12px;
-}
-
-h1 {
-  font-size: 32px;
-}
-
-.signup {
-  background: salmon;
-  border-radius: 4px;
-  padding: 9px;
 }
 
 /* about */
@@ -102,17 +91,34 @@ h1 {
   background: url('https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
   background-size: cover;
-  height: 550px;
+  height: 450px;
   color: #fff;
   display: flex;
   align-items: center;
 }
 
-.halo {
-  background: rgb(200, 214, 229, 0.8);
-  width: 75%;
+#halo {
+  background: rgb(240, 247, 255);
+  border-radius: 4px;
+  width: 96%;
+  height: 600px;
   margin: 0 auto;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(163, 235, 196);
+}
+
+.about-text {
+  display: flex;
+}
+
+.box {
+  background: rgb(163, 163, 209);
+  padding: 8px;
+  margin: 10px;
 }
 
 #sponsor {
