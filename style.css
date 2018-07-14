@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+body {
+  line-height: 1.4em;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  background: skyblue;
+  border-radius: 10px;
+}
+
 .container {
   width: 100%;
   font-family: sans-serif;
@@ -11,16 +23,20 @@
 
 .showcase {
   height: 85vh;
-  background-color: salmon;
+  background: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .show-text {
+  animation: showcase-text 0.5s 1 0s linear;
   height: 400px;
   width: 600px;
-  background: skyblue;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +45,7 @@
 
 .about {
   height: 70vh;
-  background-color: pink;
+  background-color: rgb(238, 245, 240);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,14 +54,21 @@
 .about-text {
   height: 90px;
   width: 300px;
-  background: skyblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.about-text img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
 
+.about-text p {
+  padding: 12px;
+}
 .events {
   height: 60vh;
   display: flex;
@@ -54,7 +77,8 @@
   justify-content: center;
 }
 
-.launch, .map {
+.launch,
+.map {
   background-color: yellow;
   width: 400px;
   height: 250px;
@@ -78,7 +102,6 @@
   height: 120px;
 }
 
-
 footer {
   background-color: black;
   color: #fff;
@@ -88,4 +111,15 @@ footer {
 
 .social {
   display: flex;
+}
+
+@keyframes showcase-text {
+  0% {
+    transform: rotate(0) translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
 }
