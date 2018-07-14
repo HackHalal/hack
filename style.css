@@ -52,22 +52,31 @@
   justify-content: space-around;
   align-items: center;
   justify-content: center;
+
+}
+.events h1 {
+  border:1px solid;
 }
 
-.launch, .map {
+.launch {
   background-color: yellow;
+  display:flex;
   width: 400px;
   height: 250px;
+
 }
 
-.sponsors {
+
+.sponsor {
   text-align: center;
 }
 
 .spons-item {
+  text-align: center;
   display: flex;
+  flex-direction: column;
   height: 50vh;
-  background: teal;
+  background: white;
   justify-content: space-around;
   align-items: center;
 }
