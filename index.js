@@ -1,51 +1,16 @@
-// let header = document.getElementsByTagName('header')[0];
+// map options
+function map () {
+  var mapProp= {
+    center:new google.maps.LatLng(40.7128,-74.0060),
+    zoom: 13,
+  };
 
-// let scrolling = true;
+// new map
+  var map=new google.maps.Map(document.getElementById('googleMap'),mapProp);
+}
 
-// const showHeader = 60;
-// const showMockup = 250;
+// map marker
 
-// const scrollAnimation = () => {
-//   const sections = Array.from(document.getElementsByTagName('section'));
-//   const rects = sections.map(section => section.getBoundingClientRect());
+var marker = new google.maps.Marker({position: myCenter});
 
-//   console.log(window.scrollY, window.innerHeight);
-//   // set if header is visible
-//   if (window.scrollY > 300) {
-//     console.log('pop now');
-//   }
-
-//   if (window.scrollY > showHeader) {
-//     header.classList.add('active');
-//   } else {
-//     header.classList.remove('active');
-//   }
-//   // set if client is visible
-//   if (window.scrollY > showMockup) {
-//     mockup.classList.add('active');
-//   } else {
-//     mockup.classList.remove('active');
-//   }
-
-//   for (let i = 0; i < rects.length; i++) {
-//     let section = sections[i];
-//     let rect = rects[i];
-
-//     if (rect.top < window.innerHeight && rect.bottom > 0) {
-//       section.classList.add('active');
-//     } else {
-//       section.classList.remove('active');
-//     }
-//   }
-//   scrolling = false;
-// };
-
-// window.addEventListener('scroll', () => {
-//   if (!scrolling) {
-//     // prevent layout thrashing
-//     window.requestAnimationFrame(scrollAnimation);
-//     scrolling = true;
-//   }
-// });
-
-// scrollAnimation();
+marker.setMap(map);

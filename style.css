@@ -3,6 +3,19 @@
   padding: 0;
 }
 
+body {
+  line-height: 1.4em;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  box-sizing: border-box;
+}
+
+.show-text a {
+  text-decoration: none;
+  padding: 10px;
+  background: skyblue;
+  border-radius: 10px;
+}
+
 .container {
   width: 100%;
   font-family: sans-serif;
@@ -11,16 +24,20 @@
 
 .showcase {
   height: 85vh;
-  background-color: salmon;
+  background: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .show-text {
+  animation: showcase-text 0.5s 1 0s linear;
   height: 400px;
   width: 600px;
-  background: skyblue;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +46,7 @@
 
 .about {
   height: 70vh;
-  background-color: pink;
+  background-color: rgb(238, 245, 240);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,63 +55,115 @@
 .about-text {
   height: 90px;
   width: 300px;
-  background: skyblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+.about-text img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
 
+.about-text p {
+  padding: 12px;
+}
 .events {
-  height: 60vh;
+  background-color: pink;
+  height: 600px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  justify-content: center;
-
-}
-.events h1 {
-  border:1px solid;
+  margin-bottom: 20px;
 }
 
 .launch {
-  background-color: yellow;
-  display:flex;
-  width: 400px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: black 5px solid;
+  width: 350px;
   height: 250px;
+  padding: 10px;
+  margin: 30px;
+
 
 }
 
+.map{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px black solid;
+  flex-grow: 2;
+  padding: 20px;
+  margin:30px;
+}
+
+#googleMap {
+  height: 400px;
+  width: 100%;
+  margin-top: 10px;
+}
 
 .sponsor {
   text-align: center;
+  margin-bottom: 20%;
 }
 
 .spons-item {
+  width: 80%;
+  margin: 0 auto;
   text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   height: 50vh;
   background: white;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .s-item {
-  background-color: yellow;
-  width: 150px;
-  height: 120px;
+  margin: 20px;
 }
 
+.s-item img {
+  display: inline-block;
+  width: 200px;
+  vertical-align: middle;
+  padding: 20 20 20 20px;
+}
 
 footer {
-  background-color: black;
+  background-color: rgb(20, 19, 19);
+  height: 20vh;
   color: #fff;
   display: flex;
+  align-items: center;
   justify-content: space-around;
 }
 
 .social {
   display: flex;
+}
+
+.social img {
+  margin: 10px;
+  padding: 10px;
+}
+
+@keyframes showcase-text {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
