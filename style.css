@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  /* border: 1px dotted; */
 }
 
 body {
@@ -22,15 +23,17 @@ body {
   line-height: 1.2em;
 }
 
-.showcase {
+.section-showcase {
   height: 85vh;
-  background: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background: linear-gradient(53deg, #ccfffc, #ffcccf);
+  /* background: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-attachment: fixed;
 }
 
 .show-text {
@@ -44,32 +47,88 @@ body {
   justify-content: center;
 }
 
-.about {
-  height: 70vh;
-  background-color: rgb(238, 245, 240);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.show-text h1 {
+  font-size: 52px;
+  padding: 10px;
 }
 
-.about-text {
-  height: 90px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.show-text p {
+  font-size: 26px;
+  padding: 14px;
 }
 
-.about-text img {
-  height: 100px;
-  width: 100px;
+.show-text a {
+}
+
+/* about */
+#section-contact {
+  /* background: skyblue; */
+  /* position: relative; */
+  margin-top: 50px;
+  padding: 200px 0px 200px 0px;
+  text-align: center;
+}
+
+.contact-text {
+  display: inline-block;
+  width: 485px;
+  vertical-align: middle;
+  padding-left: 95px;
+  text-align: left;
+}
+
+.contact-text h2 {
+  font-size: 42px;
+  line-height: 51px;
+  margin-bottom: 34px;
+  position: relative;
+}
+
+.contact-text h2:before {
+  content: '';
+  height: 3px;
+  width: 60px;
+  border-radius: 2px;
+  background-color: #2884f6;
+  position: absolute;
+  top: 23px;
+  right: calc(100% + 35px);
+}
+
+.contact-text p {
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+.contact-action {
+  display: inline-block;
+  width: 485px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.contact-action i {
+  background: #2884f6;
+  color: white;
+  padding: 25px;
   border-radius: 50%;
+  margin: 10px 0;
 }
 
-.about-text p {
-  padding: 12px;
+.contact-action a {
+  text-decoration: none;
+  color: #e26a6a;
+  /* display: inline-block; */
+  /* position: relative; */
 }
+
+.contact-action a:hover i {
+  /* transform: rotate(360deg); */
+  background: #ffcccf;
+  transition: 0.3s ease-in;
+}
+
+/* events */
 .events {
   height: 60vh;
   display: flex;
@@ -143,4 +202,54 @@ footer {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+header {
+  background-color: rgba(37, 37, 37, 0.8);
+  display: flex;
+  margin: 0 4em;
+  padding: 1em;
+  width: calc(100vw - 8em);
+  z-index: 10;
+  position: fixed;
+  border-radius: 0 0 1em 1em;
+  transform: translateY(-4em);
+  transition: transform 0.5s ease-out;
+}
+
+header.active {
+  transform: translateY(0);
+}
+
+header .logo {
+  flex-grow: 1;
+  padding-top: 0.25em;
+}
+
+header .logo img {
+  width: 9em;
+}
+
+header nav {
+  display: flex;
+}
+
+.nav-item {
+  height: 1.5em;
+  margin: 0 1.5em 0 0;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  padding: 0.25em;
+  transition: all 0.2s linear, color 0.5s linear;
+}
+
+.nav-item a:hover {
+  color: cornflowerblue;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: #d3d3d3;
 }
