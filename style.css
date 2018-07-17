@@ -130,21 +130,44 @@ body {
 
 /* events */
 .events {
-  height: 60vh;
+  background-color: pink;
+  height: 600px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  justify-content: center;
-}
-.events h1 {
-  border: 1px solid;
+  margin-bottom: 20px;
 }
 
 .launch {
-  background-color: yellow;
+  background-color: #fff;
   display: flex;
-  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  border: black 5px solid;
+  width: 350px;
   height: 250px;
+  padding: 10px;
+  margin: 30px;
+
+
+}
+
+.map{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px black solid;
+  flex-grow: 2;
+  padding: 20px;
+  margin:30px;
+}
+
+#googleMap {
+  height: 400px;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .sponsor {
