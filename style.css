@@ -1,43 +1,48 @@
+/*
+==========================
+GENERAL
+==========================
+*/
+
 * {
   margin: 0;
   padding: 0;
-  /* border: 1px dotted; */
+  border: 1px dotted;
 }
 
 body {
+  font-size: 16px;
   line-height: 1.4em;
   font-family: 'Fira Sans Condensed', sans-serif;
   box-sizing: border-box;
 }
 
-.show-text a {
-  text-decoration: none;
-  padding: 10px;
-  background: skyblue;
-  border-radius: 10px;
+/*
+==========================
+SHOWCASE
+==========================
+*/
+
+#myVideo {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
-.container {
+.showcase {
+  position: relative;
+  height: 101vh;
   width: 100%;
-  font-family: sans-serif;
-  line-height: 1.2em;
-}
-
-.section-showcase {
-  height: 85vh;
-  background: linear-gradient(53deg, #ccfffc, #ffcccf);
-  /* background: url('https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #f1f1f1;
+  background: rgba(252, 129, 107, 0.5);
   background-attachment: fixed;
 }
 
 .show-text {
-  animation: showcase-text 0.5s 1 0s linear;
+  /* animation: showcase-text 0.5s 1 0s linear; */
   height: 400px;
   width: 600px;
   color: #fff;
@@ -58,23 +63,39 @@ body {
 }
 
 .show-text a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 24px;
+  background: rgb(251, 62, 125);
+  box-shadow: 0 8px 6px -6px rgb(77, 55, 55);
+  color: azure;
+  border-radius: 10px;
 }
 
-/* about */
-#section-contact {
-  /* background: skyblue; */
-  /* position: relative; */
-  margin-top: 50px;
+/*
+==========================
+ABOUT
+==========================
+*/
+
+.about {
   padding: 200px 0px 200px 0px;
   text-align: center;
+  background: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-text {
-  display: inline-block;
+  /* display: inline-block;
   width: 485px;
   vertical-align: middle;
   padding-left: 95px;
-  text-align: left;
+  text-align: left; */
+  height: 400px;
+  width: 600px;
 }
 
 .contact-text h2 {
@@ -100,36 +121,13 @@ body {
   line-height: 1.7em;
 }
 
-.contact-action {
-  display: inline-block;
-  width: 485px;
-  height: 100%;
-  vertical-align: middle;
-}
+/*
+==========================
+EVENTS
+==========================
+*/
 
-.contact-action i {
-  background: #2884f6;
-  color: white;
-  padding: 25px;
-  border-radius: 50%;
-  margin: 10px 0;
-}
-
-.contact-action a {
-  text-decoration: none;
-  color: #e26a6a;
-  /* display: inline-block; */
-  /* position: relative; */
-}
-
-.contact-action a:hover i {
-  /* transform: rotate(360deg); */
-  background: #ffcccf;
-  transition: 0.3s ease-in;
-}
-
-/* events */
-.events {
+/* .events {
   background-color: pink;
   height: 600px;
   display: flex;
@@ -148,11 +146,9 @@ body {
   height: 250px;
   padding: 10px;
   margin: 30px;
-
-
 }
 
-.map{
+.map {
   background-color: #fff;
   display: flex;
   flex-direction: column;
@@ -161,14 +157,20 @@ body {
   border: 5px black solid;
   flex-grow: 2;
   padding: 20px;
-  margin:30px;
+  margin: 30px;
 }
 
 #googleMap {
   height: 400px;
   width: 100%;
   margin-top: 10px;
-}
+} */
+
+/*
+==========================
+SPONSORS
+==========================
+*/
 
 .sponsor {
   text-align: center;

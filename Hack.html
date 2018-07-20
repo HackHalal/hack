@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="hack.css">
+  <title>Hack Halal</title>
+</head>
+
+<body>
+
+  <header>
+    <p>Hack Halal</p>
+  </header>
+
+  <section class="showcase">
+    <div class="show-text">
+      <h1>Hack the Halal Way</h1>
+      <p>Come and join us to create halal stuff</p>
+      <a class="subs" href="#">SUBSCRIBE</a>
+    </div>
+  </section>
+
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <section class="about">
+    <div class="contact-text">
+      <h2>ABOUT</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatem ea blanditiis consequuntur voluptatum praesentium
+      </p>
+      <p>
+        corrupti perferendis, qui iure cumque odio magnam, ipsa id nobis, eaque iusto! Numquam, quasi quas!
+      </p>
+      <a href="#">CONTACT</a>
+    </div>
+  </section>
+
+  <section class="event">
+    <div class="event-bg"></div>
+    <div class="event-text">
+      <h2>Hack Halal Launch</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum voluptatem ea blanditiis consequuntur voluptatum praesentium
+      </p>
+      <h3>DATE TBD</h3>
+      <h3>New York University New York, NY 10003, USA</h3>
+      <a href="#">RSVP</a>
+    </div>
+  </section>
+
+  <section class="sponsor">
+    <div class="spons-text">
+      <h2>Proud Sponsors</h2>
+      <div class="spons-item">
+        <div class='s-item'>
+          <a href="#">
+            <img src="https://mlab.com/welcome/img/homepage/logo-wholefoods.svg">
+          </a>
+        </div>
+        <div class='s-item'>
+          <a href="#">
+            <img src="https://mlab.com/welcome/img/homepage/logo-facebook.svg">
+          </a>
+        </div>
+        <div class='s-item'>
+          <a href="#">
+            <img src="https://www.treehacks.com/images/sponsors/ibmpos.png">
+          </a>
+        </div>
+        <div class='s-item'>
+          <a href="#">
+            <img src="https://www.treehacks.com/images/sponsors/microsoft.png">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="post-script">
+    <div class="post-text">
+      <p>stay tune for our next event...</p>
+      <a class="subs" href="#">SUBSCRIBE</a>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <p>&copy; 2018 by Hack Halal</p>
+    </div>
+    <div class="social">
+      <a href="#">
+        <img src="./001-google-plus.png" alt="">
+      </a>
+      <a href="#">
+        <img src="./004-facebook.png" alt="">
+      </a>
+      <a href="#">
+        <img src="./003-twitter.png" alt="">
+      </a>
+      <a href="#">
+        <img src="./002-linkedin.png" alt="">
+      </a>
+    </div>
+  </footer>
+  <script>
+    var modal = document.getElementById('myModal');
+
+    var btn = document.getElementsByClassName("subs")[0];
+
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function () {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</html>
